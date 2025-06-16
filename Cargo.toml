@@ -2,7 +2,7 @@
 name = "tspawn"
 version = "0.1.0"
 edition = "2021"
-authors = ["modeckrus <modeckrus@gmail.com>"]
+authors = ["modeckrus <modeckrus.official.page@gmail.com>"]
 description = "A thread-safe wrapper around Arc<RwLock<T>> with convenient cloning semantics and async task spawning macros"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/modeckrus/tspawn"
@@ -11,7 +11,6 @@ homepage = "https://github.com/modeckrus/tspawn"
 readme = "README.md"
 keywords = ["async", "tokio", "concurrency", "threading", "rwlock"]
 categories = ["asynchronous", "concurrency", "development-tools"]
-rust-version = "1.70"
 
 [dependencies]
 tokio = { version = "1.45.1", features = [] }
