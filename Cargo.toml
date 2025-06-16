@@ -1,0 +1,42 @@
+[package]
+name = "tspawn"
+version = "0.1.0"
+edition = "2021"
+authors = ["modeckrus <modeckrus@gmail.com>"]
+description = "A thread-safe wrapper around Arc<RwLock<T>> with convenient cloning semantics and async task spawning macros"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/modeckrus/tspawn"
+documentation = "https://docs.rs/tspawn"
+homepage = "https://github.com/modeckrus/tspawn"
+readme = "README.md"
+keywords = ["async", "tokio", "concurrency", "threading", "rwlock"]
+categories = ["asynchronous", "concurrency", "development-tools"]
+rust-version = "1.70"
+
+[dependencies]
+tokio = { version = "1.45.1", features = [] }
+parking_lot = { version = "0.12", features = ["arc_lock", "send_guard"] }
+
+[dev-dependencies]
+tokio = { version = "1.45.1", features = ["full"] }
+tokio-test = "0.4"
+
+[[example]]
+name = "basic"
+required-features = []
+
+[[example]]
+name = "multiple_tasks"
+required-features = []
+
+[[example]]
+name = "complex_types"
+required-features = []
+
+[[example]]
+name = "many_vars"
+required-features = []
+
+[[example]]
+name = "expansion_test"
+required-features = []
